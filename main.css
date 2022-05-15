@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    align-items: center;
+    padding: 30px 5%;
+}
+li,a,button{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+nav li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    width:100px;
+}
+li a{
+    transition: all 0.5s ease 0s;
+}
+li a:hover{
+    color:#000;
+    transition: all 0.5s ease 0s;
+}
+header > button{
+    padding:9px 25px;
+    background-color:#fff;
+    color: #000;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+header > button:hover{
+    background-color: rgba(0,136,169,0.8);
+    
+    transition: all 0.5s ease 0s;
+
+}
+.wrapper{
+    background: url('anime.jpg') no-repeat center center/cover;
+    width:100%;
+    display:block;
+    position: relative;
+    z-index: 1;
+}
+.wrapper:before{
+    position:absolute;
+    content:'';
+    background-image: linear-gradient(to right,rgba(32,40,119,0.95),rgba(55,46,149,0.95),rgba(83,49,177,0.90),rgba(114,48,205,0.85),rgba(150,41,230,0.95));
+    width:100%;
+    height:100%;
+    z-index:-1;
+    top:0;
+    left:0;
+}
+.content{
+    padding: 100px 10%;
+    color: #fff;
+    justify-content: space-between;
+}
+.content h1{
+    font-size: 40px;
+
+}
+.content p{
+    margin:30px 0;
+    font-family:400;
+    line-height: 2;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: rgb(26, 24, 24);
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border:1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+}
+.btn-outline{
+    border-radius: 30px;
+    color:#fff;
+    border-color: #ffffff;
+    padding:12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+.btn-outline:hover{
+   background: #ffff;
+   color:#6730e3;
+}
+.social{
+    padding:20px ;
+    margin-top: 100px;
+}
+.social ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-social{
+    padding:9px 25px;
+    border: none;
+    border-radius: 50px;
+}
+.bg-facebbok{
+    background-color: #4267b2;
+}
+.bg-youtube{
+    background-color: #ff0000;
+}
+.bg-instagram{
+    background-color: #c13584;
+}
